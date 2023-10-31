@@ -57,8 +57,10 @@ class Server {
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(cors({
           origin: `${process.env.FRONTEND_URL}`,
+          methods: ['GET', 'POST', 'PUT', 'DELETE'],
           credentials: true,
         }));
+        
         
         
         
