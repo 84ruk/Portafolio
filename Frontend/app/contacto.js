@@ -25,15 +25,13 @@ export default function Contacto() {
     } */
   
     try {
-      console.log(process.env.URL_BACKEND); // Verifica el valor
 
-      const response = await axios.post(`${process.env.URL_BACKEND}/api/contact`, {
+
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_URL_BACKEND}`, {
         email,
         name,
         message
       });
-      console.log(response)
-      
       if (response.status === 200) {
         
         console.log('Mensaje guardado con éxito.');
@@ -105,7 +103,6 @@ export default function Contacto() {
           <div className="text-center">
             <button
               type="submit"
-              onClick={handleSubmit}
               className="px-4 py-2 bg-blue-600 text-white font-bold rounded-md shadow-md hover:bg-blue-500 transition-colors duration-300 hover:shadow-none"
             >
               Enviar Mensaje
