@@ -25,7 +25,7 @@ export default function Contacto() {
     } */
   
     try {
-
+      console.log(process.env.URL_BACKEND); // Verifica el valor
 
       const response = await axios.post(`${process.env.URL_BACKEND}/api/contact`, {
         email,
@@ -33,7 +33,7 @@ export default function Contacto() {
         message
       });
       console.log(response)
-      console.log(`${process.env.URL_BACKEND}`)
+      
       if (response.status === 200) {
         
         console.log('Mensaje guardado con éxito.');
