@@ -32,6 +32,8 @@ export default function Contacto() {
         name,
         message
       });
+      console.log(response)
+      console.log(`${process.env.URL_BACKEND}`)
       if (response.status === 200) {
         
         console.log('Mensaje guardado con éxito.');
