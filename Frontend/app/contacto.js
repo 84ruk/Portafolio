@@ -27,7 +27,7 @@ export default function Contacto() {
     try {
 
 
-      const response = await axios.post(`${process.env.NEXT_PUBLIC_URL_BACKEND}`, {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_URL_BACKEND}/api/contact`, {
         email,
         name,
         message

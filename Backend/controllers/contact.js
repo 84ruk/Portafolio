@@ -14,7 +14,7 @@ const contact = async (req, res = response) => {
         });
     
     } catch (error) {
-        console.error('Error en el servidor:', response.data);
+        console.error('Error en el servidor:', error);
         res.status(500).json({
             ok: false,
             msg: 'Error en el servidor'
