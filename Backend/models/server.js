@@ -21,7 +21,8 @@ class Server {
         this.paths = {
             //auth: 'api/auth
             contact: '/api/contact',
-            prueba: '/api/prueba'
+            prueba: '/api/prueba',
+            download: '/api/download'
 
         }
 
@@ -68,7 +69,8 @@ class Server {
 
         this.app.use(this.paths.contact, require('../routes/contact'));
         this.app.use(this.paths.prueba, require('../routes/prueba'));
-
+        this.app.use(this.paths.download, require('../routes/download'));
+        
       }
 
     listen(){

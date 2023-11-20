@@ -1,13 +1,13 @@
 const { Router } = require('express');
 
 
-const { contact } = require('../controllers/contact');
+const { download } = require('../controllers/download');
 
 const router = Router();
 
 
 
-router.post("/", contact);
+router.get("/", download);
 
 
 

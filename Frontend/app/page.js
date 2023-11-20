@@ -6,9 +6,10 @@ import Portafolio from './portafolio'
 import Contacto from './contacto'
 import PaperPlane from '../public/Paper_Plane.svg'
 import Flecha from '../public/Arrow_Up_Right_LG.svg'
-import Rectangulo from '../public/Rectangle 44.svg'
 import Linkedin from '../public/linkedin.svg'
-import {cvButton} from './components/cvButton'
+import CVButton from './components/CVButton'
+
+
 
 export default function Home() {
   return (
@@ -35,9 +36,9 @@ export default function Home() {
       <div className='flex flex-col items-center mt-16 mx-auto'>
         <div className='w-96 h-36 bg-black mx-auto'></div>
         <div className='flex justify-between w-40 h-16  mt-10 mx-auto'>
-        <cvButton />
-<Link
-  href="https://www.linkedin.com/in/baruk-ramos-9406651a0/"
+        <CVButton />
+        <Link
+href="https://www.linkedin.com/in/baruk-ramos-9406651a0/"
             target="_blank"
             rel="noopener noreferrer">
               <Image src={Linkedin} alt="linkedin icono" className="w-7 h-7 hover:cursor-pointer hover:transform hover:scale-110 hover:text-blue-500 transition-transform duration-300 ease-in-out" />
