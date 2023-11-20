@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import axios from "axios";
+import Alert from "./components/alert";
 
 export default function Contacto() {
 
@@ -9,23 +10,29 @@ export default function Contacto() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
+  const [alert, setAlert] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
   
     // Verificar si los campos están vacíos
-/*     if (!email || !name || !message) {
-      setErrorMessages('Todos los campos son obligatorios');
+     if (!email || !name || !message) {
+      setAlert({
+        type: 'error', 
+        message: 'Revise los campos.',
+      });
       return;
     }
   
     if (message.length < 6) {
-      setErrorMessages('El mensaje debe tener al menos 6 caracteres');
+      setAlert({
+        type: 'error', 
+        message: 'Es necesario un mensaje de minimo 6 caracteres.',
+      });
       return;
-    } */
+    } 
   
     try {
-
 
       const response = await axios.post(`${process.env.NEXT_PUBLIC_URL_BACKEND}/api/contact`, {
         email,
@@ -34,16 +41,25 @@ export default function Contacto() {
       });
       if (response.status === 200) {
         
-        console.log('Mensaje guardado con éxito.');
+        setAlert({
+          type: 'success', // Puedes cambiar a 'error' según la lógica de tu aplicación
+          message: 'Mensaje enviado correctamente.',
+        });
         
       } else {
         
-        console.error('Error en el servidor:', response.data);
-        
+        setAlert({
+          type: 'error', 
+          message: 'Error en el servidor.',
+        });
       }
     } catch (error) {
       
-      console.error('Error en la solicitud:', error);
+      console.log();
+      setAlert({
+        type: 'error', 
+        message: error.response.data.msg,
+      });
       
     }
   };
@@ -58,7 +74,9 @@ export default function Contacto() {
 
       <div className="bg-white rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 p-4 mx-auto">
         <form onSubmit={handleSubmit}>
+          
           <div className="mb-4">
+          {alert && <Alert type={alert.type} message={alert.message} onClose={() => setAlert(null)} />}
             <label htmlFor="name" className="text-gray-800 font-semibold">
               Nombre
             </label>
