@@ -7,7 +7,7 @@ import Contacto from './contacto'
 import PaperPlane from '../public/Paper_Plane.svg'
 import Flecha from '../public/Arrow_Up_Right_LG.svg'
 import Linkedin from '../public/linkedin.svg'
-import CVButton from './components/CVButton'
+import CVButton from './components/cvButton'
 
 
 
