@@ -30,9 +30,9 @@ export default function Portafolio() {
       <Slider {...settings}>
 
 
-        <div className="p-10">
+        <div className="">
 
-        <div className="slider-container w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto shadow-xl max-w-xl">
+        <div className="slider-container w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto shadow-xl max-w-xl min-w-20 ">
   <div className="slider-card">
   <div className="rounded-t-lg"><Image src={Playcar} alt='Imagen proyecto'/></div>
       <div className="p-5">
@@ -52,7 +52,7 @@ export default function Portafolio() {
             <li>MongoDB</li>
           </ul>
         </div>
-        <div className="flex justify-between ">
+        <div className="flex flex-col items-center md:flex-row md:justify-between">
       <Link
             href="https://github.com/84ruk/PlayCar"
             target="_blank"
@@ -79,9 +79,9 @@ export default function Portafolio() {
   </div>
 </div>
 
-<div className="p-10 ">
+<div className="">
 
-<div className="slider-container w-1/2 mx-auto  shadow-xl max-w-xl">
+<div className="slider-container w-1/2 mx-auto  shadow-xl max-w-xl  min-w-20">
   <div className="slider-card">
   <div className="rounded-t-lg"><Image src={Pokedex} alt='Imagen proyecto'/></div>
     <div className="p-4">
@@ -125,9 +125,9 @@ export default function Portafolio() {
 
 
 
-<div className="p-10 ">
+<div className=" min-w-20">
 
-<div className="slider-container w-1/2 mx-auto shadow-xl  max-w-xl">
+<div className="slider-container w-1/2 mx-auto shadow-xl  max-w-xl min-w-20">
   <div className="slider-card items-center">
   <div className="rounded-t-lg mx-auto w-full"><Image src={Graficador} alt='Imagen proyecto' className="mx-auto"/></div>
     <div className="p-4">
