@@ -67,17 +67,18 @@ export default function Contacto() {
 
 
   return (
-    <div className="bg-blue-100 p-10 pb-10" id="contacto">
+    <div className="p-10 pb-10" id="contacto">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-5">Contacto</h1>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 p-4 mx-auto">
-        <form onSubmit={handleSubmit}>
+      <div className="bg-white rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3 p-8 mx-auto">
+        <form onSubmit={handleSubmit} className="space-y-6">
           
-          <div className="mb-4">
           {alert && <Alert type={alert.type} message={alert.message} onClose={() => setAlert(null)} />}
-            <label htmlFor="name" className="text-gray-800 font-semibold">
+
+          <div>
+            <label htmlFor="name" className="block text-sm font-semibold text-gray-800">
               Nombre
             </label>
             <input
@@ -86,12 +87,13 @@ export default function Contacto() {
               name="name"
               value={name}
               onChange={e => setName(e.target.value)}
-              className="w-full p-2 border rounded-md"
+              className="w-full p-3 border rounded-md"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="text-gray-800 font-semibold">
+
+          <div>
+            <label htmlFor="email" className="block text-sm font-semibold text-gray-800">
               Correo Electrónico
             </label>
             <input
@@ -100,12 +102,13 @@ export default function Contacto() {
               name="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
-              className="w-full p-2 border rounded-md"
+              className="w-full p-3 border rounded-md"
               required
             />
           </div>
-          <div className="mb-4">
-            <label htmlFor="message" className="text-gray-800 font-semibold">
+
+          <div>
+            <label htmlFor="message" className="block text-sm font-semibold text-gray-800">
               Mensaje
             </label>
             <textarea
@@ -114,14 +117,15 @@ export default function Contacto() {
               value={message}
               onChange={e => setMessage(e.target.value)}
               rows="5"
-              className="w-full p-2 border rounded-md"
+              className="w-full p-3 border rounded-md resize-none"
               required
             />
           </div>
+
           <div className="text-center">
             <button
               type="submit"
-              className="px-4 py-2 bg-blue-600 text-white font-bold rounded-md shadow-md hover:bg-blue-500 transition-colors duration-300 hover:shadow-none"
+              className="px-6 py-3 bg-blue-600 text-white font-bold rounded-md shadow-md hover:bg-blue-500 transition-colors duration-300 hover:shadow-none"
             >
               Enviar Mensaje
             </button>

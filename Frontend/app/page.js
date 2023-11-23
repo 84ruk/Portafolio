@@ -49,8 +49,28 @@ href="https://www.linkedin.com/in/baruk-ramos-9406651a0/"
       </div>
 
     </main>
+    <section className="bg-gradient-to-r p-8 md:px-16">
+      <div className="max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Habilidades */}
+          <div className="bg-white rounded-lg shadow-lg p-6 backdrop-blur-md backdrop-filter backdrop-opacity-75">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Habilidades</h2>
+            <p className="text-gray-600">
+              Mi experiencia incluye JavaScript, HTML, CSS, React, Node.js, Next.js, PostgreSQL y MongoDB.
+            </p>
+          </div>
 
-    <About />
+          {/* Quién soy? */}
+          <div className="bg-white rounded-lg shadow-lg p-6 backdrop-blur-md backdrop-filter backdrop-opacity-75">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Quién soy?</h2>
+            <p className="text-gray-600">
+              Soy Baruk Ramos, tengo 21 años y soy un apasionado desarrollador autodidacta. Estudio Ingeniería en Sistemas Computacionales y aspiro a ser un desarrollador Fullstack.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <Portafolio />
     <Contacto />
