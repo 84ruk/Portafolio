@@ -10,7 +10,7 @@ export default function About() {
       <div className="w-2/3 mx-auto mt-8 bg-white rounded-md p-5 shadow-md">
         <h2 className="text-2xl font-semibold text-gray-800">Habilidades</h2>
         <p className="text-gray-600">
-          Mi experiencia incluye JavaScript, HTML, CSS, React, Node.js, Next.js, PostgreSQL y MongoDB.
+          Mi experiencia incluye JavaScript, HTML, CSS, React, Node.js, Next.js, Nest, PostgreSQL y MongoDB.
         </p>
       </div>
 
