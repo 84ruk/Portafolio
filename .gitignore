@@ -1,46 +1,73 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 
+##BAACKEND
+/Backend/.env.local
 
-.env.local
-
-/postgres/
+/Backend/postgres/
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+/Backend/node_modules
+/Backend/node_modules
+/Backend/.pnp
+/Backend/.pnp.js
+/Backend/.yarn/install-state.gz
 
 # testing
-/coverage
+/Backend/coverage
 
 # next.js
-/.next/
-/out/
+/Backend/.next/
+/Backend/out/
 
 # production
-/build
+/Backend/build
 
 # misc
-.DS_Store
-*.pem
+/Backend/.DS_Store
+/Backend/*.pem
 
 # debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/Backendn/pm-debug.log*
+/Backend/yarn-debug.log*
+/Backend/yarn-error.log*
 
 # local env files
-.env*.local
+/Backend/.env*.local
 
 # vercel
-.vercel
+/Backend/.vercel
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
+/Backend/*.tsbuildinfo
+/Backend/next-env.d.ts
 
 #
 programa.c
 programa.exe
+
+##FRONTEND
+
+# Logs
+/Frontend/*.log
+/Frontend/npm-debug.log*
+/Frontend/yarn-debug.log*
+/Frontend/yarn-error.log*
+/Frontend/pnpm-debug.log*
+/Frontend/lerna-debug.log*
+
+/Frontend/node_modules
+/Frontend/dist
+/Frontend/dist-ssr
+/Frontend/*.local
+
+# Editor directories and files
+/Frontend/.vscode/*
+/Frontend/!.vscode/extensions.json
+/Frontend/.idea
+/Frontend/.DS_Store
+/Frontend/*.suo
+/Frontend/*.ntvs*
+/Frontend/*.njsproj
+/Frontend/*.sln
+/Frontend/*.sw?
