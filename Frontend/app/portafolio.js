@@ -24,7 +24,7 @@ export default function Portafolio() {
   return (
     <div className="p-10" id="portafolio">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8">Portafolio</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-8">Proyectos</h1>
       </div>
 
       <Slider {...settings}>
@@ -68,14 +68,7 @@ export default function Portafolio() {
                   >
                     Repositorio
                   </Link>
-                  <Link
-                    href="https://play-car.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 text-black font-bold rounded-md shadow-md transition-colors duration-300 hover:shadow-none"
-                  >
-                    Ver Proyecto
-                  </Link>
+
                 </div>
               </div>
             </div>
@@ -220,21 +213,14 @@ export default function Portafolio() {
                 </div>
                 <div className="flex flex-col items-center md:flex-row md:justify-between ">
                   <Link
-                    href="https://github.com/84ruk/PokeAPI"
+                    href="https://github.com/84ruk/GraficadorVectores"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 bg-blue-600 text-white font-bold rounded-md shadow-md hover:bg-blue-500 transition-colors duration-300 hover:shadow-none"
                   >
                     Repositorio
                   </Link>
-                  <Link
-                    href="https://precious-zabaione-c7a52d.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 text-black font-bold rounded-md shadow-md transition-colors duration-300 hover:shadow-none"
-                  >
-                    Ver Proyecto
-                  </Link>
+
                 </div>
               </div>
             </div>

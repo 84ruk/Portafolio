@@ -62,7 +62,7 @@ function Header() {
           <span className="text-gray-600 hover:text-blue-600">Sobre mi</span>
         </Link>
         <Link href="#portafolio">
-          <span className="text-gray-600 hover:text-blue-600">Portafolio</span>
+          <span className="text-gray-600 hover:text-blue-600">Proyectos</span>
         </Link>
         <Link href="#contacto">
           <span className="text-gray-600 hover:text-blue-600">Contacto</span>
